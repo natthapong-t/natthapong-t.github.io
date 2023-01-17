@@ -71,13 +71,6 @@
     width: 50%;
 }
 
-.labpiccontainer:hover{
-    border: solid red 1px;
-    animation: animate 5s linear infinite;
-}
-
-
-
 .image {
     display: block;
     width: 100%;
