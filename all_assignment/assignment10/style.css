@@ -1,0 +1,82 @@
+/* นำเข้าfont3แบบ ใช้สำหรับตัวbrand ข้อความภาษาไทย และส่วนnav barที่เป็นภาษาอังกฤษแล้วไม่รองรับfontไทย */
+@font-face {
+    font-family: "dancingscript";
+    src: url(fonts/DancingScript.ttf);
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(fonts/Raleway.ttf);
+}
+
+@font-face {
+    font-family: "notosansthai";
+    src: url(fonts/NotoSansThai.ttf);
+}
+
+/* กำหนดfontให้ส่วนbrand */
+.navbar-brand{
+    letter-spacing: 1.25px;
+    font-weight: lighter;
+    font-family: dancingscript;
+}
+
+/* ให้navbarใช้font raleway */
+.navbar{
+    font-family: raleway;
+    letter-spacing: 1.25px;
+}
+
+/* subtextใช้font notosansthai */
+#subtext{
+    font-family: notosansthai;
+}
+/* ส่วนbodyก็ใช้notosansthai แต่ให้ความสูงบรรทัดสูงขึ้น */
+body{
+    font-family: notosansthai;
+    padding:0;
+    line-height: 35px;
+    letter-spacing: normal;
+}
+
+/* ให้navbarสูง5em */
+#thatNavBar{
+    height : 5em;
+}
+
+/* กำหนดให้ตัวหัวข้อ h1 h4 subtextใช้font notosansthai และให้เรียงอยู่ตรงกลาง */
+h1, h4, h5#subtext{
+    font-family: notosansthai;
+    margin: 1em;
+    letter-spacing: 1.5px;
+    text-align: center;
+
+}
+
+
+/* ให้banner100%เต็มขนาด */
+img#banner{
+    width: 100%;
+}
+
+/* ให้paragraphเป็นระยะห่างตัวอักษรแบบปกติ และให้ระยะระหว่างบรรทัดสูงขึ้น */
+p{
+    line-height: 35px;
+    letter-spacing: normal;
+}
+
+/* ให้textที่บทความต้นฉบับยกขึ้นมาเน้น เป็นตัวหนา */
+p.text-center{
+    font-weight: bolder;
+}
+
+/* เอาdefault margin paddinออก */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* เอาเส้นใต้ในlinkอ้างอิงออก */
+a#anging{
+    text-decoration: none;
+}

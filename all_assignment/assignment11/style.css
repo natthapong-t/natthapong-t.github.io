@@ -1,0 +1,205 @@
+@font-face {
+    /*นำเข้าfont*/
+    font-family: Raleway;
+    src: url(font/Raleway.ttf);
+    font-style: normal;
+    font-weight: lighter;
+}
+
+@font-face {
+    /*นำเข้าfont*/
+    font-family: hikou-outline;
+    src: url(font/hikou-outline.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* ตั้งfontในส่วนhtml */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+/* ตั้งค่าส่วนbodyไม่ให้มีscrollซ้ายขวา */
+body {
+    background-color: #eeeeee;
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* ทำส่วนheader ด้านบนสุด */
+header {
+    font-family: hikou-outline;
+    color: grey;
+    font-size: 400%;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* ข้อความบอกให้scroll down จะขึ้นมาเมื่อมีจอขนาดที่กำหนดด้านล่าง แต่เริ่มต้นเป็น none */
+p#scrolldown {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 300%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(128, 128, 128, 0.25);
+    font-size: 20%;
+    font-family: Raleway;
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+    p#scrolldown {
+        display: block;
+    }
+}
+
+/* mobile, tablet */
+/* ทำให้ภาพชิดซ้ายในขนาดมือถือและtablet */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    img {
+        min-width: 40em;
+        height: auto;
+        border: solid grey 1px;
+        display: block;
+        text-align: start;
+    }
+    div.piccontainer {
+        text-align: start;
+    }
+    body {
+        overflow-x: scroll;
+        height: 100%;
+        width: fit-content;
+    }
+    .container {
+        border: solid gray 1px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header::before {
+        background: none;
+    }
+}
+
+/* ส่วนของheader *พยายาม* ทำให้เป็นparallax */
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+/* จัดการheaderส่วนที่อยู่หลัง::after ที่อยู่หลังcontent*/
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(pics/compbg/bg02.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+/* ทำให้containerเวลาเลื่อนผ่านheaderจะเหมือนมีลูกเล่น และจัดการตั้งค่าต่างๆตามด้านล่าง */
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eeeeee;
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    line-height: 35px;
+    font-weight: lighter;
+    padding: 3em;
+    padding-bottom: 0;
+    color: grey;
+    overflow-x: hidden;
+}
+
+/* ทำส่วนของlink */
+a {
+    color: black
+}
+
+a:visited {
+    color: black
+}
+
+a:hover {
+    color: grey
+}
+
+/* ให้ภาพตอนเริ่มต้นแสดงอยู่ที่ขนาด60% */
+img {
+    width: 60%;
+    display: block;
+    margin-left: none;
+    margin-right: auto;
+}
+
+/* containerเก็บรูป */
+div.piccontainer {
+    text-align: start;
+}
+
+div {
+    margin-top: 2em;
+}
+
+/* ใส่พื้นหลังให้ข้อความหัวข้อรองให้สีตัดกัน */
+h1.notmainhead {
+    background-color: gray;
+    color: white;
+    width: fit-content;
+    padding: 5px;
+}
+
+/* ส่วนของfooter */
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    height: 25px;
+    width: 110%;
+    margin-left: -3em;
+    margin-bottom: 0;
+    background: gray;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    z-index: 999;
+    
+}
+

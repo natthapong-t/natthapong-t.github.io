@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+div.container{
+    padding: 1rem;
+    margin: 2% auto;
+    
+}
+
+label{
+    cursor: default;
+}
+
+fieldset{
+    display: flex;
+    padding: 1rem;
+}
+
+div.right{
+    margin-left: 2rem;
+}

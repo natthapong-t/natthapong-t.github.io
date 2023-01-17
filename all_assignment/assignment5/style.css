@@ -1,0 +1,144 @@
+html{
+    scroll-behavior: smooth; /*ให้เวลาเลื่อนมันsmooth*/
+}
+
+@font-face {  /*นำfontเข้า*/
+    font-family: 'SpaceGrotesk'; /*ใช้fontชื่อSpaceGrotesk*/
+    src: url(fonts/SpaceGrotesk-VariableFont_wght.ttf);  /*ใส่ที่อยู่้font*/
+    font-style: normal;  /*ตั้ง font style เป็นnormal*/
+    font-weight: normal; /*ตั้ง font weight เป็น normal*/
+}
+
+* {
+    font-family: "SpaceGrotesk, Georgia, 'Times New Roman', Times, serif";  /*ใชเfontโดยใส่font fallbacksเผื่อไว้*/
+    background: #C9CBCA; /*สีพื้นหลัง*/
+}
+
+body {
+    font-family: "SpaceGrotes, Georgia, 'Times New Roman', Times, serif";  /*ใชเfontโดยใส่font fallbacksเผื่อไว้*/
+    font-size: 0.8em;/*ขนาดอักษร*/
+    color: #4B4F50;/*สีอักษร*/
+}
+
+header{ /*ส่วนของ header*/
+    margin-bottom: 15px; /*เว้นbuttom 15px*/
+    padding: 8px; /*เเว้น8px*/
+}
+
+h2 {/*ส่วนที่อักษรขนาดh2*/
+    text-align: center;/*ให้ตัวหนังสืออยู่กลาง*/
+    font-family: "SpaceGrotesk";/*ใช้fontชื่อSpaceGrotesk*/
+    text-shadow:0px 3px white;/*ใส่เงา*/
+}
+
+header {/*อีกส่วนของheader*/
+    color: #4B4F50;/*สี*/
+    background: #C9CBCA;/*พื้นหลัง*/
+    margin-bottom: 5px;/*เว้นbuttom5px*/
+    font-family: "SpaceGrotesk";/*/ใช้fontชื่อSpaceGrotesk*/
+    font-weight: 100;/*ตั้งfont weight 100*/
+    font-size: 300%;/*ขนาดfont 300%*/
+    font-style: normal;/*font style เป็น normal*/
+}
+
+footer { /*ส่วนท้าย*/
+    margin-top: 15px; /*เว้นบน15px*/
+    margin-bottom: 15px; /*เว้นล่าง15ox*/
+    padding: 8px;/*เว้น8px*/
+    color: #4B4F50;/*สีอักษร*/
+    background: #C9CBCA;/*สีพื้นหลัง*/
+    font-family: "SpaceGrotesk";/*ใช้font*/
+    font-weight: 100;/*ตั้ง font weight เป็น 100*/
+    font-size: 100%;/*ขนาดfont 100%*/
+    font-style: normal;/*font style เป็น normal*/
+    text-align: center;/*ตั้งให้เรียงอักษรตรงกลาง*/
+}
+
+p {
+    text-align: left; /*อักษรชิดซ้าย*/
+    vertical-align: top; /*แบบอักษรแนวตั้ง เรียงแบบtop*/
+    font-family: "SpaceGrotesk"; /*ใช้fontชื่อSpaceGrotesk*/
+}
+
+
+
+li {
+    font-family: "SpaceGrotesk";/*ใช้fontชื่อSpaceGroteskในlist*/
+}
+
+
+
+a:link {
+    color: #4B4F50; /*สีลิ้งค์*/
+}
+
+a:visited {
+    color: #4B4F50; /*สีลิ้งค์ที่ไปมาแล้ว*/
+}
+
+a:hover {
+    background-color: #C9CBCA; /*สีพื้นหลังลิ้งค์ขณะวางเมาส์ไว้ข้างบน*/
+    border: solid #4B4F50;	/*สีขอบลิ้งค์ขณะวางเมาส์ไว้ข้างบน*/
+}
+
+a:active {
+    background-color: #989CA4; /*สีพื้นหลังลิ้งค์ขณะกด*/
+    color: #4B4F50; /*สีขณะกด*/
+}
+
+
+
+a {
+    text-decoration: none; /*เอาเส้นใต้ลิ้งค์ออก*/
+}
+
+.inside_grid_part {
+    display: grid; /*ตั้งdisplayให้เป็นแบบgrid*/
+    padding: 2rem; /*เว้น2rem*/
+    grid-template-columns: 500px 1fr; /*ตั้งค่าgrid column*/
+    gap: 3rem; /*ช่องว่าง3rem*/
+    align-items: center; /*ตั้งitemไว้เรียงกลาง*/
+    max-width: 1000px; /*ความกว้างสูงสุด1000px*/
+    margin: 0 auto; /*เว้นขอบ0 ขอบข้าง auto*/
+    font-family: "SpaceGrotesk"; /*ใช้fontชื่อSpaceGrotesk*/
+    font-size: large; /*fontขนาดlarge*/
+}
+
+img {
+    max-width: 100%; /*ตั้งimage max width*/
+    height: auto; /*ความสูง auto*/
+	/*จริงๆกำหนดในsourceไปแล้ว แต่เผื่อไว้*/
+}
+
+.outside_grid_part {
+    padding: 2rem; /*เว้น2rem*/
+    align-items: center; /*เรียงตรงกลาง*/
+    max-width: 1000px;/*ความกว้างสูงสุด1000px*/
+    margin: 0 auto;/*เว้นขอบ0 ขอบข้าง auto*/
+    font-family: "SpaceGrotesk";/*ใช้fontชื่อSpaceGrotesk*/
+    font-size: large;/*fontขนาดlarge*/
+}
+
+.skrt {/*ตั้งค่าbackgroundส่วนของskrt*/
+    background: rgb(201,203,202);
+    background: linear-gradient(270deg, rgba(201,203,202,1) 0%, rgba(201,203,202,1) 0%, rgba(75,79,80,1) 50%, rgba(201,203,202,1) 100%);
+}
+
+.gotopbtn{ /*ปุ่มขึ้นไปด้านบนสุด*/
+    position: fixed; /*ตำแหน่งแบบตายตัว */
+    width: 50px; /*กว้าง 50px*/
+    height: 50px; /*สูง 50px*/
+    background: #C9CBCA; /*สีbackground*/
+    bottom: 40px; /*ระยะbuttom40px*/
+    right: 50px;/*ระยะชินขวา 50px*/
+  
+    text-decoration: none; /*เอาเส้นใต้ออก*/
+    text-align: center; /*เรียงไว้ตรงกลางของส่วนนั้น*/
+    line-height: 50px; /*ความกว้างบรรทัด 50px*/
+    border: solid #4B4F50; /*สีขอบ*/
+    color: #4B4F50; /*สี*/
+    font-size: 22px; /*ขนาด*/
+  }
+
+  
+

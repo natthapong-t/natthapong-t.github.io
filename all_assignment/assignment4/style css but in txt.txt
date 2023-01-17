@@ -1,0 +1,133 @@
+
+h1{
+    color: red;
+}
+
+
+p{ 
+    color:red;
+    text-align : center;
+}
+
+
+p#green{
+    color:green
+}
+
+
+p.purple{
+    color:purple;
+    font: size 24px;
+}
+
+p.gold{
+    color:gold;
+    background-color: black;
+    
+}
+
+
+
+
+/* 4. Contextual Selector */
+
+div p {
+    font-size: 32px;
+    font-weight: bold;
+    background-color: goldenrod;
+
+}
+
+div p span{
+    color:pink;
+}
+
+
+/* 5. Grouping Selector*/
+
+
+ /*เขียนไว้ด้วยกัน ( same properties)*/
+p.purple, p.gold {
+    font-family: monospace;
+    font-size : 64px;
+}
+
+
+h1, p, p.purple, p#green{
+    font-family: cursive;
+    font-weight: bold;
+
+}
+
+
+
+/* 6.Pseudo Class*/
+
+a:link {
+    color:Purple;
+}
+
+a:visited {
+    color:orange;
+}
+
+a:hover {
+    background-color:green;
+    border: solid red;
+}
+
+a:active {
+    background-color: black;
+    color: white;
+
+}
+
+
+/* 7. Psuedo Element*/
+
+
+/* its p:: not p: */
+
+p::first-letter{
+    color: red;
+    font-size: 2em;
+}
+
+p::first-line{
+    color: green;
+    font-family: monospace;
+}
+
+
+
+
+
+/*8. star selector (default and global setting i guess) */
+
+*{
+    color: gold;
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+
+    
+}
+
+
+
+/*
+
+
+
+what in the world is cascading
+1.ทำงานเป็นลำดับ
+2.ถ้าเจาะจงจะทำงานอิสระ
+3.ระยะห่างของ css  ที่ใกล้ html ที่สุด = inline > internal > external
+4.ให้ความสำคัญโดยการใช้ !important 
+
+
+
+
+*/
+
+
