@@ -1,0 +1,154 @@
+@font-face {
+    font-family: coves;
+    src: url(../font/Coves.otf);
+}
+
+.content{
+    background-color: #1b1b1b;
+}
+
+.p4top{
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.p4top1{
+    flex: 1;
+}
+
+.p4top h1 span {
+    color:white;
+    margin-right: -0.2em;
+    transition: 0.5s ease;
+}
+.p4top h1:hover span {
+    margin-right: 0.25em;
+}
+
+.p4top h1:hover span:nth-child(9):after{
+    content: ".";
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
+    animation: animate 5s linear infinite;
+}
+
+.p4mid{
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 0.5em;
+}
+
+.p4mid ul li{
+    padding: 3em;
+    display: inline-block;
+    color: white;
+}
+
+.p4mid ul li i{
+    margin-bottom: 0.25em;
+}
+
+
+
+.p4mid ul li a{
+    display: inline-block;
+    color: white;
+    transition: 0.25s ease;
+}
+.p4mid ul li a span {
+    font-family: coves;
+}
+
+
+.p4mid ul li a:hover{
+    transform: scale(0.95);
+    color: #ddd;    
+}
+
+.p4mid ul li a .contactlink{
+    padding: 0.5em;
+    
+}
+
+.p4bottom{
+    margin:1em 0;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 0.5em;
+    flex-direction: column;
+}
+
+.p4bottom iframe{
+    width: 49%;
+    padding: 0.5em;
+}
+
+.p4bottom h3{
+    padding: 1em;
+    letter-spacing: 1.5px;
+    font-family: coves;
+    color: white;
+}
+
+.p4bottom .box{
+    width: 80%;
+}
+
+@media (max-width: 930px){
+    .p4top{
+        font-size: smaller;
+        height: 50vh;
+    }
+
+    .p4top h1 span {
+        font-size: 0.8em;
+        color:white;
+        margin-right: -0.25em;
+        transition: 0.5s ease;
+    }
+
+    .p4top h1:hover span {
+        font-size: 0.6em;
+        margin-right: -8px;
+        
+    }
+
+    .p4top h1:hover span:nth-child(9):after{
+        content: ".";
+        color: #ff0000;
+        animation: animate 5s linear infinite;
+    }
+
+    .p4mid{
+        height: 100%;
+    }
+
+    .p4bottom iframe{
+        width: 100%;
+        padding-bottom: 0.5em;
+    }
+
+    .p4bottom .box{
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .p4top h1 span {
+        font-size: 0.5em;
+        color: white;
+        margin-right: -0.5em;
+        transition: 0.5s ease;
+    }
+
+    .p4top h1:hover span {
+        font-size: 0.3em;
+        margin-right: -8px;
+    }
+}

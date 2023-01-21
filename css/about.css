@@ -1,0 +1,300 @@
+@font-face {
+    font-family: coves;
+    src: url(../font/Coves.otf);
+}
+
+.content {
+    font-weight: lighter;
+}
+
+@media (min-width: 931px) {
+    .p2top {
+        /* hero */
+        box-sizing: border-box;
+        background-color: #1b1b1b;
+        clip-path: ellipse(150% 100% at 50% 0%);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .p2topleft {
+        height: 100vh;
+        flex: 1;
+        background: url(../pic/p2circleme.png);
+        background-size: 85%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .p2topright {
+        flex: 1;
+        color: white;
+    }
+    /* might be useful (margin hover) */
+    .p2top h1 span {
+        margin-right: -0.2em;
+        transition: 0.5s ease;
+    }
+    .p2top h1:hover span {
+        margin-right: 0.25em;
+    }
+
+    .p2top h1:hover span:nth-child(5):after{
+        content: ".";
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
+        animation: animate 5s linear infinite;
+    }
+
+    .p2mid {
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        list-style: none;
+    }
+    .p2mid ul li {
+        font-size: 0.75em;
+        letter-spacing: 0.5px;
+        font-family: coves;
+        padding: 0.25em 0.25em 0.25em 1em;
+        list-style: none;
+    }
+    .p2mid ul {
+        margin: 0 auto;
+        width: 50%;
+    }
+    span.listlabel {
+        font-weight: bold;
+    }
+    .p2midleft {
+        height: 100vh;
+        flex: 1;
+        background: url(../pic/p2circleme2.png);
+        background-size: 80%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .p2midright {
+        text-align: left;
+        flex: 1;
+    }
+    .p2bottom {
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+        list-style: none;
+    }
+    .p2bottomleft {
+        flex: 1;
+        text-align: left;
+    }
+    .p2bottomright {
+        text-align: left;
+        flex: 1;
+    }
+    .p2bottom ul li {
+        font-size: 0.75em;
+        letter-spacing: 0.5px;
+        font-family: coves;
+        padding: 0.25em 0.25em 0.25em 1em;
+        list-style: none;
+    }
+    .p2bottom ul {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .skillcontainer {
+        border-radius: 10px;
+        width: 100%;
+        background-color: #ddd;
+    }
+    .skills {
+        border-radius: 10px;
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    .c {
+        width: 60%;
+        background-color: #1b1b1b;
+    }
+    .Java {
+        width: 50%;
+        background-color: #1b1b1b;
+    }
+    .HTML {
+        width: 75%;
+        background-color: #1b1b1b;
+    }
+    .CSS {
+        width: 70%;
+        background-color: #1b1b1b;
+    }
+    .JavaScript {
+        width: 25%;
+        background-color: #1b1b1b;
+    }
+    .skillhead {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+
+@media (max-width: 930px){
+    .p2top {
+        overflow: hidden;
+        /* hero */
+        box-sizing: border-box;
+        background-color: #1b1b1b;
+        clip-path: ellipse(150% 100% at 50% 0%);
+        height: 100vh;
+        display: block;
+        align-items: center;
+    }
+
+    .p2topleft {
+        height: 75vh;
+        background: url(../pic/p2circleme.png);
+        background-size: 85%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .p2topright {
+        color: white;
+    }
+
+    /* might be useful (margin hover) */
+    .p2top h1 span{
+        font-size: smaller;
+        margin-right: -0.2em;
+        transition: 0.5s ease;
+    }
+    .p2top h1:hover span {
+        margin-right: 0.05em;
+    }
+
+    .p2top h1:hover span:nth-child(5):after{
+        content: ".";
+        color: #ff0000;
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
+        animation: animate 5s linear infinite;
+    }
+
+    .p2mid {
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        display: block;
+        list-style: none;
+    }
+    .p2mid ul li {
+        font-size: 0.75em;
+        letter-spacing: 0.5px;
+        font-family: coves;
+        padding: 0.25em 0.25em 0.25em 1em;
+        list-style: none;
+    }
+    .p2mid ul {
+        margin: 0 auto;
+        width: 80%;
+    }
+    span.listlabel {
+        font-weight: bold;
+    }
+    .p2midleft {
+        height: 50vh;
+        background: url(../pic/p2circleme2.png);
+        background-size: 65%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    .p2midright {
+        height: 50%;
+        text-align: left;
+        flex: 1;
+    }
+
+    .p2bottom {
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        display: block;
+        list-style: none;
+    }
+    .p2bottomleft {
+        height: 50%;
+        text-align: left;
+    }
+    .p2bottomright {
+        height: 50%;
+        text-align: left;
+    }
+    .p2bottom ul li {
+        font-size: 0.75em;
+        letter-spacing: 0.5px;
+        font-family: coves;
+        padding: 0.25em 0.25em 0.25em 1em;
+        list-style: none;
+    }
+    .p2bottom ul {
+        margin: 0 auto;
+        width: 80%;
+    }
+    .skillcontainer {
+        border-radius: 10px;
+        width: 100%;
+        background-color: #ddd;
+    }
+    .skills {
+        border-radius: 10px;
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    .c {
+        width: 60%;
+        background-color: #1b1b1b;
+    }
+    .Java {
+        width: 50%;
+        background-color: #1b1b1b;
+    }
+    .HTML {
+        width: 75%;
+        background-color: #1b1b1b;
+    }
+    .CSS {
+        width: 70%;
+        background-color: #1b1b1b;
+    }
+    .JavaScript {
+        width: 25%;
+        background-color: #1b1b1b;
+    }
+    .skillhead {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .p2top h1 span {
+        font-size: 0.5em;
+        color: white;
+        margin-right: -0.5em;
+        transition: 0.5s ease;
+    }
+
+    .p2top h1:hover span {
+        font-size: 0.3em;
+        margin-right: -8px;
+    }
+}

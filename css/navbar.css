@@ -1,0 +1,195 @@
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+nav div a:not(span#dot){
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 1rem;
+  font-family: coves;
+  transition: text-shadow 0.5s ease;
+}
+
+span#dot {
+  transition: all 0.5s ease;
+}
+
+nav div a:hover:not(span#dot) {
+  text-shadow: 0 0 10px #fff
+              , 0 0 20px #fff;
+}
+
+nav div a:hover span#dot {
+  color: #ff0000;
+  font-size: 50px;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
+}
+
+nav ul {
+  
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0rem 0.5rem;
+  padding: 0.75rem 0.5rem;
+  letter-spacing: 1.5px;
+  transition: border-bottom 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+span#dot {
+  color: red;
+  animation: animate 5s linear infinite;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@keyframes animate{
+  0%, 100%{
+      filter: hue-rotate(0deg);
+  }
+
+  50%{
+      filter: hue-rotate(360deg);
+  }
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* big screen  */
+@media (min-width: 931px) {
+  nav ul li a.active, nav ul li a:hover {
+    color: #fff;
+    /* border-bottom: #fff solid 3px; */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li a {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+  }
+  
+  /* underline hover */
+  nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    animation: animate 5s linear infinite;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease;
+  }
+  nav ul li a.active::after,
+  nav ul li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  nav ul li a.active::after{
+    background-color: #fff;
+    animation: none;
+  }
+}
+
+/* smol screen  */
+@media (max-width: 930px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: -100%;
+    background: #1b1b1b;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked~ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked~ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active {
+    background: none;
+    color: #fff;
+    text-shadow: 0 0 10px #fff
+    , 0 0 20px #fff;
+  }
+
+  
+  nav ul li a:hover {
+    background: none;
+    color: #fff;
+  }
+}
