@@ -127,8 +127,8 @@ input[type="checkbox"] {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #ff0000;
-    animation: animate 5s linear infinite;
+    background-color: #ffffff;
+    /* animation: animate 5s linear infinite; */
     transform-origin: bottom right;
     transition: transform 0.25s ease;
   }

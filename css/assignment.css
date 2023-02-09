@@ -28,7 +28,7 @@
     margin-right: 0.25em;
 }
 
-.p5top h1:hover span:nth-child(12):after{
+.p5top h1:hover span:nth-child(7):after{
     content: ".";
     color: #ff0000;
     text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
@@ -130,7 +130,7 @@ div.text{
         margin-right: -8px;
     }
 
-    .p5top h1:hover span:nth-child(12):after{
+    .p5top h1:hover span:nth-child(7):after{
         content: ".";
         color: #ff0000;
     }
