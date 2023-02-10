@@ -1,0 +1,171 @@
+@font-face {
+    font-family: coves;
+    src: url(../font/Coves.otf);
+}
+
+.content {
+    background-color: #1b1b1b;
+}
+
+.p5top {
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.p5top1 {
+    flex: 1;
+}
+
+.p5top h1 span {
+    color: white;
+    margin-right: -0.2em;
+    transition: 0.5s ease;
+}
+
+.p5top h1:hover span {
+    margin-right: 0.25em;
+}
+
+.p5top h1:hover span:nth-child(7):after{
+    content: ".";
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
+    animation: animate 5s linear infinite;
+}
+
+.p5mid {
+    margin: 1em 0;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    font-size: 0.5em;
+    flex-direction: column;
+}
+
+.p5mid h3 {
+    padding: 1em;
+    letter-spacing: 1.5px;
+    font-family: coves;
+    color: white;
+}
+
+.p5mid .box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid white 1px; */
+    width: 80%;
+}
+
+
+
+.labpiccontainer {
+    border: solid white 1px;
+    margin: 1em;
+    justify-content: space-evenly;
+    flex: 1;
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1b1b1b;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.labpiccontainer:hover .overlay {
+    width: 0%;
+}
+
+div.text {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+div.text{
+    font-family: coves;
+}
+
+
+
+
+
+@media (max-width: 930px) {
+    .p5top {
+        font-size: smaller;
+        height: 50vh;
+    }
+    .p5top h1 span {
+        font-size: 0.7em;
+        color: white;
+        margin-right: -0.25em;
+        transition: 0.5s ease;
+    }
+    .p5top h1:hover span {
+        font-size: 0.6em;
+        margin-right: -8px;
+    }
+
+    .p5top h1:hover span:nth-child(7):after{
+        content: ".";
+        color: #ff0000;
+    }
+    .p5mid {
+        height: 100%;
+    }
+    .p5mid .box {
+        justify-content: center;
+        align-items: center;
+        display: block;
+        /* border: solid white 1px; */
+        width: 90%;
+    }
+
+    .p5mid .box .labpiccontainer{
+        justify-content: center;
+        align-items: center;
+        display: block;
+        /* border: solid white 1px; */
+        width: 90%;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .p5top h1 span {
+        font-size: 0.5em;
+        color: white;
+        margin-right: -0.5em;
+        transition: 0.5s ease;
+    }
+
+    .p5top h1:hover span {
+        font-size: 0.3em;
+        margin-right: -8px;
+    }
+}

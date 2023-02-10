@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/35c103d6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/syllabus-ba.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/breadcrumb.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;700&display=swap');
+	  * {
+		  box-sizing: border-box;
+	  }
+    </style>
+    <title>C² | Syllabus</title>
+    <link rel="icon" href = "./img/icon.ico">
+</head>
+<body>
+  <!-- START NAV-BAR -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+      <div class="logo"><a href="./index.html"><img src="./img/logoC2.png" alt="" width="120"></a></div>
+        <ul class="links">
+          <li><a href="./index.html" class="home">หน้าหลัก</a></li>
+          <li>
+            <a href="#" class="desktop-link about">เกี่ยวกับ</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features" class="about">เกี่ยวกับ</label>
+            <ul>
+              <li class="right-b"><a href="./history.html" class="history">ประวัติ</a></li>
+              <li class="right-b"><a href="./administrators.html" class="admins">คณะผู้บริหาร</a></li>
+              <li>
+                <a href="#" class="desktop-link personnel">บุคลากร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items" class="personnel">บุคลากร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./personel-cs.html" id="T-CS">คณาจารย์ประจำหลักสูตร CS</a></li>
+                  <li class="right-b"><a href="./personel-it.html" id="T-IT">คณาจารย์ประจำหลักสูตร IT</a></li>
+                  <li class="right-b"><a href="./personel-gis.html" id="T-GIS">คณาจารย์ประจำหลักสูตร GIS</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="./news.html" class="news-class">ข่าวสาร</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link education">การศึกษา</a>
+            <input type="checkbox" id="show-services">
+            <label for="show-services" class="education">การศึกษา</label>
+            <ul>
+              
+              <li>
+                <a href="#" class="desktop-link syllabus">หลักสูตร<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items2">
+                <label for="show-items2" class="syllabus">หลักสูตร<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./syllabus-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./syllabus-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./syllabus-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items3">
+                <label for="show-items3" class="scholarship">ทุนการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./scholarship-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                  <li class="right-b"><a href="./scholarship-master.html" class="master-text">ระดับปริญญาโท</a></li>
+                  <li class="right-b"><a href="./scholarship-doctor.html" class="doctor-text">ระดับปริญญาเอก</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></a>
+                <input type="checkbox" id="show-items4">
+                <label for="show-items4" class="calendar">ปฏิทินการศึกษา<i class="fas fa-caret-right"></i></label>
+                <ul>
+                  <li class="right-b"><a href="./calendar-grad.html" class="grad">ระดับบัณฑิตศึกษา</a></li>
+                  <li class="right-b"><a href="./calendar-bachelor.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                </ul>
+              </li>
+              <li class="right-b"><a href="https://reg.kku.ac.th/" target="_blank" id="service">บริการการศึกษา</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link" id="admission">การรับเข้าศึกษา</a>
+            <input type="checkbox" id="show-services2">
+            <label for="show-services2" id="admission2">การรับเข้าศึกษา</label>
+            <ul>
+              <li>
+                <li class="right-b"><a href="./admission.html" class="bachelor-text">ระดับปริญญาตรี</a></li>
+                <li class="right-b"><a href="https://gs.kku.ac.th" target="_blank" class="grad">ระดับบัณฑิตศึกษา</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#" class="desktop-link research">งานวิจัย</a>
+            <input type="checkbox" id="show-services3">
+            <label for="show-services3" class="research">งานวิจัย</label>
+            <ul>
+              <li class="right-b"><a href="./research.html" id="researchGroup">ศูนย์วิจัยและกลุ่มวิจัย</a></li>
+              <li class="right-b"><a href="./mou.html" id="MOU">ความร่วมมือ MOU</a></li>
+            </ul>
+          </li>
+          <li><a href="./contact.html" id="contact">ติดต่อ</a></li>
+        </ul>
+      </div>
+      <!-- START CHANGE LANG. -->
+        <label class="lang">
+          <span class="slide">
+            <span class="slide-text1">TH</span>
+            <span class="slide-text2">EN</span>
+          <span class="slider">
+            <span class="slider-text" id="selected-lang">TH</span>
+          </span>
+        </span>
+        </label>
+      <!-- END CHANGE LANG. -->
+
+      <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Search.." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- END NAV-BAR -->
+
+
+<!--***** START CONTENT *****-->
+<div class="banner">
+	<img src="./img/banner/masterprogram_th.jpg" alt="p2scholarship_banner" class="banner-img" id="p2scholarship-th">
+</div>
+<p class="breadcrumb">หน้าหลัก > การศึกษา > หลักสูตร > ระดับปริญญาโท</p>
+    <div class="container">
+      <h1 class="ba-text">หลักสูตรการศึกษาระดับปริญญาโท</h1>
+      
+      <div class="row">
+        <a href="./sylla-ba-cs.html"><div class="frame"><i class="fas fa-laptop-code cont"></i><h1 class="cont cs">สาขาวิชาวิทยาการคอมพิวเตอร์</h1></div></a>
+      </div>
+      <div class="row">
+        <a href="./sylla-ba-it.html"><div class="frame"><i class="fa-rotate-90 fab fa-hive cont"></i><h1 class="cont it">สาขาวิชาเทคโนโลยีสารสนเทศ</h1></div></a>
+      </div>
+      <div class="row">
+        <a href="./sylla-ba-gis.html"><div class="frame"><i class="fas fa-satellite cont"></i><h1 class="cont gis">สาขาวิชาภูมิสารสนเทศศาสตร์</h1></div></a>
+      </div>
+      <div class="row">
+        <a href="./sylla-ba-cs.html"><div class="frame"><i class="fas fa-robot cont"></i><h1 class="cont ai">สาขาวิชาวิทยาการข้อมูลและปัญญาประดิษฐ์</h1></div></a>
+      </div>
+      <div class="row">
+        <a href="./sylla-ba-cs.html"><div class="frame"><i class="fas fa-laptop-code cont"></i><h1 class="cont csit">สาขาวิชาวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</h1></div></a>
+      </div>
+    </div>
+
+
+<!--***** END CONTENT *****-->
+  
+
+    <!-- START FOOTER -->
+    <div class="footer">
+      <div class="foot-expand">
+        <img src="./img/logoC2_white.png" alt="" class="foot-logo">
+        <span class="foot-span">
+          <p>123 ถ.มิตรภาพ ต.ในเมือง อ.เมือง จ.ขอนแก่น 40002</p>
+          <p>โทรศัพท์ 043-009700 ต่อ 44456, 44459, 44457</p>
+          <p>สายด่วน. 089-7102651, 089-7102645</p>
+          <p>Department of Computer Science, Faculty of Science, Khon Kaen University.</p>
+        </span>
+        <div class="social-media">
+          <a href="https://www.facebook.com/computing.kku" target="_blank" class="facebook">
+            <i class="fab fa-facebook-square"></i>
+            <span>Facebook Fanpage</span>
+          </a>
+          <a href="https://www.youtube.com/channel/UCJbH9xZZ9rNGfKahEebeFOA" target="_blank" class="youtube">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube Channel</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-text">
+        <span>COPYRIGHT © 2021 ALL RIGHTS RESERVED</span>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+  <script src="./js/lang.js"></script>
+  <script src="./js/syllabus-master.js"></script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+@font-face {
+    /*นำเข้าfont*/
+    font-family: Raleway;
+    src: url(font/Raleway.ttf);
+    font-style: normal;
+    font-weight: lighter;
+}
+
+* {
+    /*ตั้ง marginเริ่มต้นเป็น0 และตั้งfont*/
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-family: Raleway;
+}
+
+body {
+    /*ใส่พื้นหลัง*/
+    background-image: url(pic/whitebg/bg02.jpg);
+    background-size: cover;
+    background-color: #dbdad6;
+    background-blend-mode: normal;
+    font-family: Raleway;
+    background-color: #f2f2f2;
+}
+
+.nav {
+    /*จัดให้ navigation bar เรียงตรงกลาง*/
+    text-align: right;
+    background-color: #202020;
+    padding: 1.5em;
+}
+
+li.listnav {
+    /*ทำnavigation bar แนวนอน*/
+    font-weight: lighter;
+    color: #dbdad6;
+    margin: 2rem;
+    display: inline;
+}
+
+.nav li a {
+    /*ปรับแต่งหน้าตาlink*/
+    text-decoration: none;
+    color: #dbdad6;
+    transition: background-color 0.25s, color 0.25s;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.nav li a:hover {
+    color: black;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+a:visited {
+    color: #dbdad6;
+}
+
+a {
+    /*ปรับแต่งหน้าตาlink*/
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 1s, color 1s;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+img.me {
+    /*ปรับแต่งภาพให้เป็นวงกลม และแก้การจัดเรียงบนหน้า*/
+    /* border-radius: 50%; */
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+    margin: 5em;
+    max-width: 40%;
+    max-height: auto;
+    
+}
+
+
+
+img.p2me {
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 0em;
+    border-radius: 50%;
+    max-width: 40%;
+    max-height: auto;
+    
+}
+
+div.main {
+    /*กำหนดความในส่วนกลางของเว็บ*/
+    min-height: 100vh;
+    height: 100%;
+}
+
+/*หลังจากนี้จะเป็นการกำหนดหน้าตาtextตามแต่ละ id และ classที่ตั้งไว้*/
+
+#page1text {
+    font-size: 1.5em;
+    padding-top: 15em;
+    padding-left: 5em;
+    padding-right: 5em;
+    vertical-align: center;
+    text-align: center;
+}
+
+#page1subtext {
+    color: #20202086;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    vertical-align: center;
+    text-align: center;
+}
+
+p.subhead {
+    margin-left: 5em;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: -4em;
+    color: #20202086;
+}
+
+p {
+    line-height: 150%;
+    color: #202020;
+    font-size: 100%;
+}
+
+.page2text {
+    float: left;
+    margin-left: 5em;
+    margin-right: 6em;
+    margin-top: 15em;
+    margin-bottom: 6em;
+    line-height: 30px;
+    border: 2px solid #202020;
+    padding: 2em;
+}
+
+.prefixhuh {
+    /*ตั้งสีคำนำหน้าตรงข้อมูลส่วนตัว*/
+    color: #20202080;
+}
+
+p#contactheading {
+    /*ปรับหน้าตา heading contact*/
+    font-size: xx-large;
+    text-align: center;
+    margin: 5em 5em 4em 5em;
+}
+
+li.contactlist {
+    /*ทำให้contact list แสดงแบบในแถวเดียวกัน*/
+    margin: 3%;
+    display: inline-block;
+}
+
+.contactdiv {
+    /*ทำให้contactอยู่ตรงกลาง*/
+    text-align: center;
+}
+
+a.contactlink {
+    /*กำหนดหน้าตาlink*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #202020;
+}
+
+a.contactlink:visited {
+    /*กำหนดหน้าตาlinkmที่เคยไปแล้ว*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #202020;
+}
+
+a.contactlink:hover {
+    /*กำหนดหน้าตาlinkขณะhover*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+span.realcontactbold {
+    /*ทำให้ตัวcontactหนา*/
+    font-weight: bold;
+}
+
+p#streamheading {
+    /*ปรับหน้าตา heading stream*/
+    font-size: xx-large;
+    text-align: center;
+    margin: 5em 5em 4em 5em;
+}
+
+li.streamlist {
+    /*ทำให้stream list แสดงแบบในแถวเดียวกัน*/
+    margin: 3%;
+    display: inline-block;
+}
+
+.streamdiv {
+    /*ทำให้streamอยู่ตรงกลาง*/
+    text-align: center;
+}
+
+a.streamlink {
+    /*กำหนดหน้าตาlink*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #202020;
+}
+
+a.streamlink:visited {
+    /*กำหนดหน้าตาlinkที่เคยไปแล้ว*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #202020;
+}
+
+a.streamlink:hover {
+    /*กำหนดหน้าตาlinkขณะhover*/
+    font-weight: bold;
+    text-decoration: none;
+    color: #7c7c7c;
+}
+
+footer {
+    /*กำหนดค่าให้footer*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+    text-align: center;
+    color: #dbdad6;
+    background-color: #202020;
+}

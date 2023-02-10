@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 13 | Form</title>
+    <link rel="stylesheet" href="form.css">
+    <scriptdefer src = "script.js"></script>
+</head>
+
+
+
+
+<body>
+    <div class="container">
+        <form action=" ">
+            <fieldset>
+                <legend>
+                    <h3>Employment Application</h3>
+                </legend>
+                <div class="left">
+                    <label for="position">Which position are you applying for?</label>
+                    <br>
+
+                    <select id="position" name="position" >
+                        <option value="executive">Executive</option>
+                        <option value="manager">Manager</option>
+                        <option value="vpres">Vice President</option>
+                        <option value="marketing">Marketing </option>
+                    </select>
+                    <br>
+                    <br>
+
+                    <p>Are you willing to relocate?</p>
+                    <input type="radio" id="yes" name="yes" value="yes" >
+                    <label for="yes">Yes</label>
+                    <br>
+                    <input type="radio" id="No" name="No" value="No" >
+                    <label for="No">No</label>
+                    <br>
+                    <br>
+
+                    <label for="startdate">When can you start?</label>
+                    <br>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+                    <br>
+
+                    <label for="portfolio">Portfolio Web Site</label>
+                    <br>
+                    <input type="url" id="portfolio" name="portfolio" required>
+                    <br>
+                    <br>
+
+                    <label for="file">Attach a Copy of Your Resume</label>
+                    <br>
+                    <input type="file" id="myFile" name="filename" required>
+                    <br>
+                    <br>
+                </div>
+
+                <div class="right">
+                    <p>Your Contact Information</p>
+                    <br>
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" id="fname" name="fname" placeholder="First" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last" required>
+                    <br>
+                    <br>
+
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required>
+                    <br>
+                    <br>
+
+                    <label for="phone">Phone</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" placeholder="###-###-####"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                    <small>Format: ###-###-####</small><br><br>
+
+                    <input type="submit" value="Submit">
+                </div>
+
+
+
+
+            </fieldset>
+
+
+
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+
+
+
+
+</html>

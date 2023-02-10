@@ -1,0 +1,63 @@
+@font-face {
+    /*นำเข้าfont*/
+    font-family: Raleway;
+    src: url(font/Raleway.ttf);
+    font-style: normal;
+    font-weight: lighter;
+}
+
+@media (max-width:480px) {}
+
+@media (min-width: 481px) and (max-width:768px) {}
+
+@media (min-width: 769px)and (max-width:1200px) {}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(255, 211, 211, 0.5);
+    background-image: url("pics/compbg/bg00.jpg");
+    background-repeat:repeat-y;
+    background-blend-mode: normal;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Raleway, sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin: 1em;
+    text-align: center;
+}
+
+div.container {
+    text-align: center;
+    margin-top: 2em;
+    line-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#whatisseo {
+    background-color: red;
+    font-size: 200%;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-self: center;
+}
+
+ul {
+    list-style: none;
+}
