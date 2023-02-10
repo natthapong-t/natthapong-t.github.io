@@ -72,10 +72,15 @@
     color: #ddd;    
 }
 
+.p3mid ul li .realcontact{
+    font-family: coves;
+}
+
 .p3mid ul li a .contactlink{
     padding: 0.5em;
     
 }
+
 
 @media (max-width: 930px){
     .p3top{
