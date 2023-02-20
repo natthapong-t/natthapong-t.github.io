@@ -50,7 +50,7 @@
     .p2mid {
         justify-content: space-around;
         align-items: center;
-        height: 100vh;
+        height: 100%;
         display: flex;
         list-style: none;
     }
@@ -65,8 +65,8 @@
         margin: 0 auto;
         width: 50%;
     }
-    span.listlabel {
-        font-weight: normal;
+    .listlabel {
+        font-weight: bold;
     }
     .p2midleft {
         height: 100vh;
@@ -97,6 +97,7 @@
         text-align: left;
         flex: 1;
     }
+
     .p2bottom ul li {
         font-size: 0.75em;
         letter-spacing: 0.5px;
@@ -174,6 +175,36 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* small screen */
 @media (max-width: 930px){
     .p2top {
@@ -219,7 +250,7 @@
         overflow: hidden;
         justify-content: space-around;
         align-items: center;
-        height: 100vh;
+        height: 100%;
         display: block;
         list-style: none;
     }
@@ -234,8 +265,8 @@
         margin: 0 auto;
         width: 80%;
     }
-    span.listlabel {
-        font-weight: normal;
+    .listlabel {
+        font-weight: bold;
     }
     .p2midleft {
         height: 50vh;
@@ -317,7 +348,58 @@
         text-align: center;
         margin-bottom: 1em;
     }
+
+
+    div.skilllist {
+        margin-bottom: 2em;
+        text-align: center;
+        
+    }
+
+    div.skillbox{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .skillpic{
+        height: 3em;
+    }
+
+    li.insideskillbox{
+        text-align: center;
+        display: inline-block;
+    }
+
+    ul.ulinsideskillbox{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* very small screen */
 @media (max-width: 400px) {
