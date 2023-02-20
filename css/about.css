@@ -7,6 +7,8 @@
     font-weight: lighter;
 }
 
+
+/* big screen */
 @media (min-width: 931px) {
     .p2top {
         /* hero */
@@ -64,7 +66,7 @@
         width: 50%;
     }
     span.listlabel {
-        font-weight: bold;
+        font-weight: normal;
     }
     .p2midleft {
         height: 100vh;
@@ -86,10 +88,12 @@
         list-style: none;
     }
     .p2bottomleft {
+        height: 100%;
         flex: 1;
         text-align: left;
     }
     .p2bottomright {
+        height: 100%;
         text-align: left;
         flex: 1;
     }
@@ -117,15 +121,17 @@
         color: white;
     }
     .c {
-        width: 60%;
+        width: 25%;
         background-color: #1b1b1b;
     }
+
+
     .Java {
-        width: 50%;
+        width: 25%;
         background-color: #1b1b1b;
     }
     .HTML {
-        width: 75%;
+        width: 50%;
         background-color: #1b1b1b;
     }
     .CSS {
@@ -141,9 +147,34 @@
         text-align: center;
         margin-bottom: 1em;
     }
+
+    div.skilllist {
+        margin-bottom: 2em;
+        text-align: center;
+        
+    }
+
+    div.skillbox{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .skillpic{
+        height: 3em;
+    }
+
+    li.insideskillbox{
+        text-align: center;
+        display: inline-block;
+    }
+
+    ul.ulinsideskillbox{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
 }
 
-
+/* small screen */
 @media (max-width: 930px){
     .p2top {
         overflow: hidden;
@@ -188,7 +219,7 @@
         overflow: hidden;
         justify-content: space-around;
         align-items: center;
-        height: 100%;
+        height: 100vh;
         display: block;
         list-style: none;
     }
@@ -204,7 +235,7 @@
         width: 80%;
     }
     span.listlabel {
-        font-weight: bold;
+        font-weight: normal;
     }
     .p2midleft {
         height: 50vh;
@@ -228,11 +259,11 @@
         list-style: none;
     }
     .p2bottomleft {
-        height: 50%;
+        height: 100%;
         text-align: left;
     }
     .p2bottomright {
-        height: 50%;
+        height: 100%;
         text-align: left;
     }
     .p2bottom ul li {
@@ -258,16 +289,19 @@
         padding-bottom: 10px;
         color: white;
     }
+
     .c {
-        width: 60%;
+        width: 25%;
         background-color: #1b1b1b;
     }
+
+ 
     .Java {
-        width: 50%;
+        width: 25%;
         background-color: #1b1b1b;
     }
     .HTML {
-        width: 75%;
+        width: 50%;
         background-color: #1b1b1b;
     }
     .CSS {
@@ -285,6 +319,7 @@
     }
 }
 
+/* very small screen */
 @media (max-width: 400px) {
     .p2top h1 span {
         font-size: 0.5em;

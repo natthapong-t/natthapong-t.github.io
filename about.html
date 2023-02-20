@@ -60,45 +60,47 @@
 
             <div class="p2midright">
                 <ul>
-                    <span class = "listlabel">Name</span>
+                    <span class="listlabel">Name</span>
                     <li>Natthapong Thaboran</li>
                     <br>
-                    
-                    <span class = "listlabel">Date of Birth</span>
+
+                    <span class="listlabel">Date of Birth</span>
                     <li>18 February 2002</li>
                     <br>
 
-                    <span class = "listlabel">Age</span>
-                    <li>20</li>
+                    <span class="listlabel">Age</span>
+                    <li>21</li>
                     <br>
 
-                    <span class = "listlabel">Gender </span>
+                    <span class="listlabel">Gender </span>
                     <li>Male <i class="fas fa-mars"></i></li>
                     <br>
 
-                    
+
                 </ul>
             </div>
         </div>
 
         <div class="p2bottom">
-            
+
             <div class="p2bottomleft">
                 <ul>
-                    
-                    <span class = "listlabel">Address</span>
+
+                    <span class="listlabel">Address</span>
                     <li>Mueng Khon Kaen District, Khon Kaen 4002.</li>
                     <br>
 
-                    <span class = "listlabel">Education</span>
+                    <span class="listlabel">Education</span>
                     <li>Department of Computer Science, College of Computing, Khon Kaen University.</li>
                     <br>
 
-                    <span class = "listlabel">Hobby</span>
-                    <li>Playing video games</li>
-                    <li>Listening to music</li>
+                    <span class="listlabel">Interests</span>
+                    <li>Video Games</li>
+                    <li>Music</li>
+                    <li>Coding</li>
+                    <li>Online Content</li>
+                    <li>Memes</li>
                     <br>
-                    
 
                 </ul>
             </div>
@@ -106,55 +108,81 @@
 
             <div class="p2bottomright">
 
-                <h3 class = "skillhead">Programming Skills</h3>
+                <h3 class="skillhead">Programming Skills</h3>
 
-                <ul>
-                    <span class = "listlabel">C</span>
-                    <li>
-                        <div class="skillcontainer">
-                            <div class="skills c"></div>
-                        </div>
-                        <br>
-                    </li>
-                    
-                    <span class = "listlabel">Java</span>
-                    <li>
-                        <div class="skillcontainer">
-                            <div class="skills Java"></div>
-                        </div>
-                        <br>
-                    </li>
+                <div class="skilllist">
 
-                    <span class = "listlabel">HTML</span>
-                    <li>
-                        <div class="skillcontainer">
-                            <div class="skills HTML"></div>
-                        </div>
-                        <br>
-                    </li>
+                    <div class="skillbox">
 
-                    <span class = "listlabel">CSS</span>
-                    <li>
-                        <div class="skillcontainer">
-                            <div class="skills CSS"></div>
-                        </div>
-                        <br>
-                    </li>
+                        <ul class=ulinsideskillbox>
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/c.png" alt=""> <br>
+                                <span class="listlabel">C <br>(beginner)</span>
+                            </li>
 
-                    <span class = "listlabel">JavaScript</span>
-                    <li>
-                        <div class="skillcontainer">
-                            <div class="skills JavaScript"></div>
-                        </div>
-                        <br>
-                    </li>
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/java.png" alt=""> <br>
+                                <span class="listlabel">Java <br>(beginner)</span>
+                            </li>
+
+                        </ul>
+
+                        <ul class=ulinsideskillbox>
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/JavaScript-logo.png" alt=""> <br>
+                                <span class="listlabel">JavaScript <br>(beginner)</span>
+                            </li>
+
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/HTML5_logo_and_wordmark.svg.png" alt=""> <br>
+                                <span class="listlabel">HTML <br>(Intermediate)</span>
+                            </li>
+
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/CSS3_logo_and_wordmark.svg.png" alt=""> <br>
+                                <span class="listlabel">CSS <br>(Intermediate)</span>
+                            </li>
+
+                        </ul>
+
+                     
+
+                    </div>
+
+                </div>
+
+                <h3 class="skillhead">Software Skills</h3>
+                <div class="skilllist">
+
+                    <div class="skillbox">
+
+                        </ul>
+
+                        <ul class=ulinsideskillbox>
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/figma.png" alt=""> <br>
+                                <span class="listlabel">Figma <br>(beginner)</span>
+                            </li>
+
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/Adobe_XD.png" alt=""> <br>
+                                <span class="listlabel">Adobe XD <br>(beginner)</span>
+                            </li>
+
+                            <li class="insideskillbox">
+                                <img class="skillpic" src="pic/skill/Adobe_PS.png" alt=""> <br>
+                                <span class="listlabel">Adobe Photoshop <br>(Intermediate)</span>
+                            </li>
+                        </ul>
+
+                    </div>
 
 
-                    
-                </ul>
+
+                </div>
+
             </div>
 
-            
         </div>
 
 
@@ -177,17 +205,17 @@
 
 
     <!-- rgb scrollbar -->
-  <div id="progressbar"></div>
-  <script src = "https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type = "text/javascript">
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop(),
-      dh = $(document).height(),
-      wh = $(window).height();
-      scrollPercent = (scroll / (dh-wh)) * 100;
-      $('#progressbar').css('height', scrollPercent + '%');
-    })
-  </script>
+    <div id="progressbar"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+            scrollPercent = (scroll / (dh - wh)) * 100;
+            $('#progressbar').css('height', scrollPercent + '%');
+        })
+    </script>
 
 </body>
 
