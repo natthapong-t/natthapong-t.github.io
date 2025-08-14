@@ -19,28 +19,32 @@
         display: flex;
         align-items: center;
     }
+
     .p2topleft {
         height: 100vh;
         flex: 1;
         background: url(../pic/p2circleme.png);
-        background-size: 85%;
-        background-position: 50% 50%;
+        background-size: 40rem;
+        background-position: 50% 40%;
         background-repeat: no-repeat;
     }
+
     .p2topright {
         flex: 1;
         color: white;
     }
+
     /* might be useful (margin hover) */
     .p2top h1 span {
         margin-right: -0.2em;
         transition: 0.5s ease;
     }
+
     .p2top h1:hover span {
         margin-right: 0.25em;
     }
 
-    .p2top h1:hover span:nth-child(5):after{
+    .p2top h1:hover span:nth-child(5):after {
         content: ".";
         color: #ff0000;
         text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
@@ -54,6 +58,7 @@
         display: flex;
         list-style: none;
     }
+
     .p2mid ul li {
         font-size: 0.75em;
         letter-spacing: 0.5px;
@@ -61,13 +66,16 @@
         padding: 0.25em 0.25em 0.25em 1em;
         list-style: none;
     }
+
     .p2mid ul {
         margin: 0 auto;
         width: 50%;
     }
+
     .listlabel {
         font-weight: bold;
     }
+
     .p2midleft {
         height: 100vh;
         flex: 1;
@@ -76,10 +84,12 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
+
     .p2midright {
         text-align: left;
         flex: 1;
     }
+
     .p2bottom {
         justify-content: space-around;
         align-items: center;
@@ -87,11 +97,13 @@
         display: flex;
         list-style: none;
     }
+
     .p2bottomleft {
         height: 100%;
         flex: 1;
         text-align: left;
     }
+
     .p2bottomright {
         height: 100%;
         text-align: left;
@@ -105,15 +117,18 @@
         padding: 0.25em 0.25em 0.25em 1em;
         list-style: none;
     }
+
     .p2bottom ul {
         margin: 0 auto;
         width: 80%;
     }
+
     .skillcontainer {
         border-radius: 10px;
         width: 100%;
         background-color: #ddd;
     }
+
     .skills {
         border-radius: 10px;
         text-align: right;
@@ -121,6 +136,7 @@
         padding-bottom: 10px;
         color: white;
     }
+
     .c {
         width: 25%;
         background-color: #1b1b1b;
@@ -131,18 +147,22 @@
         width: 25%;
         background-color: #1b1b1b;
     }
+
     .HTML {
         width: 50%;
         background-color: #1b1b1b;
     }
+
     .CSS {
         width: 70%;
         background-color: #1b1b1b;
     }
+
     .JavaScript {
         width: 25%;
         background-color: #1b1b1b;
     }
+
     .skillhead {
         font-weight: bold;
         text-align: center;
@@ -152,24 +172,24 @@
     div.skilllist {
         margin-bottom: 2em;
         text-align: center;
-        
+
     }
 
-    div.skillbox{
+    div.skillbox {
         text-align: center;
         margin-bottom: 1em;
     }
 
-    .skillpic{
+    .skillpic {
         height: 3em;
     }
 
-    li.insideskillbox{
+    li.insideskillbox {
         text-align: center;
         display: inline-block;
     }
 
-    ul.ulinsideskillbox{
+    ul.ulinsideskillbox {
         margin-top: 1em;
         margin-bottom: 1em;
     }
@@ -206,7 +226,7 @@
 
 
 /* small screen */
-@media (max-width: 930px){
+@media (max-width: 930px) {
     .p2top {
         overflow: hidden;
         /* hero */
@@ -225,21 +245,23 @@
         background-position: center;
         background-repeat: no-repeat;
     }
+
     .p2topright {
         color: white;
     }
 
     /* might be useful (margin hover) */
-    .p2top h1 span{
+    .p2top h1 span {
         font-size: smaller;
         margin-right: -0.2em;
         transition: 0.5s ease;
     }
+
     .p2top h1:hover span {
         margin-right: 0.05em;
     }
 
-    .p2top h1:hover span:nth-child(5):after{
+    .p2top h1:hover span:nth-child(5):after {
         content: ".";
         color: #ff0000;
         text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000, 0 0 120px #ff0000, 0 0 160px #ff0000;
@@ -254,6 +276,7 @@
         display: block;
         list-style: none;
     }
+
     .p2mid ul li {
         font-size: 0.75em;
         letter-spacing: 0.5px;
@@ -261,13 +284,16 @@
         padding: 0.25em 0.25em 0.25em 1em;
         list-style: none;
     }
+
     .p2mid ul {
         margin: 0 auto;
         width: 80%;
     }
+
     .listlabel {
         font-weight: bold;
     }
+
     .p2midleft {
         height: 50vh;
         background: url(../pic/p2circleme2.png);
@@ -275,6 +301,7 @@
         background-position: 50% 50%;
         background-repeat: no-repeat;
     }
+
     .p2midright {
         height: 50%;
         text-align: left;
@@ -289,14 +316,17 @@
         display: block;
         list-style: none;
     }
+
     .p2bottomleft {
         height: 100%;
         text-align: left;
     }
+
     .p2bottomright {
         height: 100%;
         text-align: left;
     }
+
     .p2bottom ul li {
         font-size: 0.75em;
         letter-spacing: 0.5px;
@@ -304,15 +334,18 @@
         padding: 0.25em 0.25em 0.25em 1em;
         list-style: none;
     }
+
     .p2bottom ul {
         margin: 0 auto;
         width: 80%;
     }
+
     .skillcontainer {
         border-radius: 10px;
         width: 100%;
         background-color: #ddd;
     }
+
     .skills {
         border-radius: 10px;
         text-align: right;
@@ -326,23 +359,27 @@
         background-color: #1b1b1b;
     }
 
- 
+
     .Java {
         width: 25%;
         background-color: #1b1b1b;
     }
+
     .HTML {
         width: 50%;
         background-color: #1b1b1b;
     }
+
     .CSS {
         width: 70%;
         background-color: #1b1b1b;
     }
+
     .JavaScript {
         width: 25%;
         background-color: #1b1b1b;
     }
+
     .skillhead {
         font-weight: bold;
         text-align: center;
@@ -353,24 +390,24 @@
     div.skilllist {
         margin-bottom: 2em;
         text-align: center;
-        
+
     }
 
-    div.skillbox{
+    div.skillbox {
         text-align: center;
         margin-bottom: 1em;
     }
 
-    .skillpic{
+    .skillpic {
         height: 3em;
     }
 
-    li.insideskillbox{
+    li.insideskillbox {
         text-align: center;
         display: inline-block;
     }
 
-    ul.ulinsideskillbox{
+    ul.ulinsideskillbox {
         margin-top: 1em;
         margin-bottom: 1em;
     }

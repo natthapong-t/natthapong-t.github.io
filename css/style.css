@@ -165,10 +165,10 @@ body {
     .topleft {
         height: 100%;
         width: 100%;
-        background-size: 80%;
+        background-size: 40rem;
         background-repeat: no-repeat;
         background-position-x: 50%;
-        background-position-y: 50%;
+        background-position-y: 40%;
         background-image: url(../pic/Wactuallycircleme.png);
         flex: 1;
     }
